@@ -224,8 +224,7 @@ footer p{
         position: absolute;
         top: 0;
         left: 0;
-        overflow-y: hidden;
-        overflow-x:hidden;
+        overflow: hidden;
     }
 
     .collection {
@@ -254,7 +253,7 @@ footer p{
         font-family: "JetBrains Mono", monospace;
         font-weight: 200;
         font-style: italic;
-        font-size: 15px;
+        font-size: 6px;
     }
 
     footer {
@@ -287,7 +286,7 @@ footer p{
         font-family: "JetBrains Mono", monospace;
         font-weight: 200;
         font-style: italic;
-        font-size: 20px;
+        font-size: 10px;
     }
     
     
