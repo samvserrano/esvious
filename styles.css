@@ -197,7 +197,7 @@ footer p{
     color: #FF5C00;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 390pt) {
 
     #wrapper {
         width: 390px;
@@ -220,7 +220,7 @@ footer p{
     }
 
     .background img {
-        width: 340%;
+        width: 375%;
         position: absolute;
         top: 0;
         left: 0;
