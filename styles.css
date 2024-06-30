@@ -197,10 +197,7 @@ footer p{
     color: #FF5C00;
 }
 
-@media only screen 
-    and (width: 390px) 
-    and (height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) { 
+@media screen and (max-width: 390px) {
 
     #wrapper {
         width: 390px;
