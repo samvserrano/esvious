@@ -1,0 +1,242 @@
+#wrapper {
+    width: 1890px;
+    height: 1600px;
+}
+
+body {
+    background-color: #000000;
+} 
+
+header {
+    display: flex; 
+    position: fixed;
+    width: 92%;
+    margin-left: 60px;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 99;
+}
+
+header p {
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+p {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.background img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+
+}
+
+.collection {
+    margin-left: 10px;
+    margin-top: -400px;
+}
+
+.ageless img {
+    width: 1800px;
+}
+
+.land-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -40px;
+    margin-left: 25px;
+
+}
+
+.land-grid p {
+    color: #FFFFFF;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 12px;
+
+}
+
+footer {
+    margin-left: 20px;
+    margin-top: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF5C00;
+    transition: ease-in-out .3s;
+}
+
+a::after {
+    color: #FF5C00;
+}
+
+
+footer p{
+    color: #FFFFFF;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+/* BUTTON MENU */
+.atypical-menu-button {
+    width: 25px; /* Size of the button */
+    height: 25px; /* Size of the button */
+    background-color: #FF5C00;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.3s ease;
+    color: white;
+    z-index: 1001; /* Ensure button stays on top of the menu */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atypical-menu-button::before, .atypical-menu-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #FF5C00;
+    width: 180%;
+    height: 5px;
+    border-radius: 5px; /* Rounded ends */
+    transition: transform 0.3s ease;
+}
+
+.atypical-menu-button::before {
+    transform: translate(-50%, -50%);
+}
+
+.atypical-menu-button::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.atypical-menu-button.rotate {
+    transform: rotate(3deg);
+}
+
+.atypical-menu-button.rotate::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.atypical-menu-button.rotate::after {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+
+
+
+
+/* Full-screen navigation styling */
+.full-screen-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Slight transparency for overlay effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+    z-index: 1000; /* Below the button */
+    
+}
+
+.full-screen-nav.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+
+.full-screen-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.full-screen-nav li {
+    margin: 20px 0;
+}
+
+.full-screen-nav a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    transition: color 0.3s;
+
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.full-screen-nav a:hover {
+    color: #FF5C00;
+}
+
+@media only screen 
+    and (width: 390px) 
+    and (height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+    #wrapper {
+        width: 390px;
+        height: 844px;
+    }
+
+    header {
+        display: flex; 
+        position: fixed;
+        width: 20.5%;
+        margin-left: 20px;
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: center; 
+        z-index: 100;
+    } 
+    
+    header p {
+        font-size: 5px;
+    }
+
+    .background img {
+        width: 340%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: scroll;
+
+    }
+
+    .collection {
+        margin-left: 10px;
+        margin-top: -400px;
+        z-index: 99;
+    }
+
+    
+    
+}
