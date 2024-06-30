@@ -197,7 +197,7 @@ footer p{
     color: #FF5C00;
 }
 
-@media screen and (max-width: 390pt) {
+@media screen and (max-width: 1170px) {
 
     #wrapper {
         width: 390px;
