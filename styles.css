@@ -219,8 +219,16 @@ footer p{
         font-size: 5px;
     }
 
+    .background {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+
     .background img {
         width: 375%;
+        object-fit: cover;
         position: absolute;
         top: 0;
         left: 0;
