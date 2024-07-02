@@ -210,7 +210,7 @@ footer p{
 
     #wrapper {
         width: 390px;
-        height: 844px;
+        height: 644px;
         top: 0;
     }
 
@@ -219,7 +219,7 @@ footer p{
         position: fixed;
         width: 20.5%;
         margin-left: 20px;
-        margin-top: 250px;
+        margin-top: 30px;
         justify-content: space-between;
         align-items: center; 
         z-index: 100;
