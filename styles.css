@@ -192,7 +192,6 @@ footer p{
 
 .full-screen-nav a {
     text-decoration: none;
-    font-size: 24px;
     color: #FFFFFF;
     transition: color 0.3s;
 
@@ -331,7 +330,7 @@ footer p{
     }
 
     .full-screen-nav li {
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .dot {
@@ -348,18 +347,21 @@ footer p{
 
     .full-screen-nav a {
         text-decoration: none;
-        font-size: 24px;
         color: #FFFFFF;
         transition: color 0.3s;
 
         font-family: "JetBrains Mono", monospace;
         font-weight: 400;
         font-style: italic;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .full-screen-nav a:hover {
         color: #FF5C00;
+    }
+
+    .full-screen-nav.visible ul .menu-footer {
+        font-size: 5px;
     }
     
 }
