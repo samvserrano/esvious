@@ -266,6 +266,7 @@ footer p{
         margin-top: 20px;
         position: relative;
         z-index: 99;
+        visibility: hidden;
     }
 
     a {
@@ -360,8 +361,16 @@ footer p{
         color: #FF5C00;
     }
 
-    .full-screen-nav.visible ul .menu-footer {
-        font-size: 5px;
+    nav.full-screen-nav ul p.mob-foot {
+        font-size: 9px;
     }
     
+    nav.full-screen-nav ul p.mob-foot a {
+        color: #FF5C00;
+        font-size: 9px;
+    }
+
+    nav.full-screen-nav ul p.mob-foot a:hover {
+        color: #FFFFFF;
+    }
 }
