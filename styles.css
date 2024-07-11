@@ -139,10 +139,6 @@ footer p{
     transform: translate(-50%, -50%) rotate(135deg);
 }
 
-
-
-
-
 /* Full-screen navigation styling */
 .full-screen-nav {
     position: fixed;
@@ -171,11 +167,13 @@ footer p{
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: right;
+    text-align:center;
+
 }
 
 .full-screen-nav li {
     margin: 20px 0;
+
 }
 
 .dot {
@@ -186,7 +184,6 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1000px;
     position: relative;
 }
 
@@ -194,16 +191,86 @@ footer p{
     text-decoration: none;
     color: #FFFFFF;
     transition: color 0.3s;
-
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     font-style: italic;
-    font-size: 55px;
+    font-size: 45px;
 }
 
 .full-screen-nav a:hover {
     color: #FF5C00;
 }
+
+nav.full-screen-nav ul p.mob-foot {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+/* Contact */
+
+.formspree {
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+label {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+}
+
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px; /* Rounded edges for input fields */
+    font-size: 14px;
+    background: rgba(202, 202, 202, 0.5); /* Semi-transparent input background */
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    outline: none;
+}
+
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #FF5C00; /* Border color on focus */
+    background: rgba(202, 202, 202, 0.5); /* Slightly less transparent on focus */
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px; /* Rounded edges for the button */
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+}
+
+
+
 
 @media screen and (max-width: 1170px) {
 
@@ -362,6 +429,7 @@ footer p{
     }
 
     nav.full-screen-nav ul p.mob-foot {
+        visibility: visible;
         font-size: 9px;
     }
     
