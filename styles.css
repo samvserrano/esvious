@@ -278,6 +278,12 @@ body .images img{
 }
 
 
+@media screen and (max-width: 1170px) {
+    body .images img{
+    width: auto;
+
+}
+}
 
 
 @media screen and (max-width: 1170px) {
