@@ -278,9 +278,9 @@ body .images img{
 }
 
 
-@media screen and (max-width: 390px) {
+@media(max-width:768px){
     body .images img{
-    width: fit-content;
+    width: 100%;
 
 }
 }
