@@ -280,7 +280,7 @@ body .images img{
 
 @media(max-width:768px){
     body .images img{
-    width: 100%;
+    width: fit-content;
 
 }
 }
