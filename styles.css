@@ -281,12 +281,13 @@ body .images img{
 @media(max-width:768px){
     body .images img{
     width: fit-content;
+    height: auto;
 
 }
 }
 
 
-@media screen and (max-width: 1170px) {
+@media(max-width: 1170px) {
 
     #wrapper {
         width: 390px;
