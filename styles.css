@@ -6,7 +6,7 @@
 body {
     margin: 0;
     background-image: url(desert_esvious.jpg);
-    background-color: #000000;
+    background-color: #49331f;
     background-repeat: no-repeat;
 } 
 
@@ -273,17 +273,19 @@ button[type="submit"]:hover {
 /* IMAGES */
 
 body .images img{
-    width: 1900px;
+    width: auto;
 
 }
 
 
 @media(max-width:768px){
-    body .images img{
-    width: fit-content;
-    height: auto;
+    
+    body .images img {
+        object-fit: contain;
 
-}
+
+    }
+
 }
 
 
